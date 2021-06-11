@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="LectureBackup.app">
+    <class name="InheritanceCollege" table="InheritanceCollege">
+        <id name="regNo" column="regNo"/>
+        <property name="collName" column="collName"/>
+        <property name="services" column="services"/>
+        <joined-subclass name="InheritanceStudent" table="InheritanceStudent">
+         <key column="regNo"/>
+         <property name="rollNo" column="rollNo"/>
+         <property name="stuName" column="stuName"/>
+        </joined-subclass>         
+    </class>
+</hibernate-mapping>

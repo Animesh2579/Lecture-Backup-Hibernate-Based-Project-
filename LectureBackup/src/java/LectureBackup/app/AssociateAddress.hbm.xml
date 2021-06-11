@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+<hibernate-mapping package="LectureBackup.app">
+    <class name="AssociateAddress" table="AssociateAddress">
+        <id name="streetNo" column="streetNo"/>
+        <property name="address" column="address"/>   
+        <property name="city" column="city"/> 
+    </class>  
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="LectureBackup.app">
+    <class name="Request" table="Request_new">
+        <id name="srNo">
+            <generator class="native"/>
+        </id>
+        <property name="enrId" column="enrId"/>
+        <property name="name" column="name"/>
+        <property name="course" column="course"/>
+        <property name="branch" column="branch"/>
+        <property name="semester" column="semester"/>
+        <property name="section" column="section"/>
+        <property name="date" column="date"/>
+        <property name="subject" column="subject"/>
+        <property name="facultyName" column="facultyName"/>
+        <property name="contact" column="contact"/>
+        <property name="email" column="email"/>
+        
+        
+    </class>
+
+
+
+</hibernate-mapping>

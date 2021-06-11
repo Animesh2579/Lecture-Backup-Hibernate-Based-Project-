@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="LectureBackup.app">
+
+<class name="TeacherSignIn" table="teacherSignIn">
+    <id name="teacherId" column="teacherId"></id>
+    <property name="teacherPass" column="teacherPass"/>
+</class>
+
+</hibernate-mapping>
